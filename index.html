@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  <!--  <link href="main.css" rel="stylesheet" type="text/css" />-->
+    <link rel="stylesheet" href="float-grid.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner">
+      <div class="row">
+        <div class="col-14">
+          <h1 class="quiz-header">
+            X-MEN Quiz
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+      <section class="start-page">
+        <div class="row">
+          <div class="col-12">
+            <h1>
+              Test Your Mutant Knowledge!
+            </h1>
+          </div>
+        </div>
+            <button class="start-quiz">START</button>
+        <div class="row">
+          <!--<div class="col-6">-->
+            <img src="https://cdn2.newsok.biz/cache/r960-b3ad750f5207ad90e4d67ba6607c4cb7.jpg" class="front-image" />
+          <!--</div>-->
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col-3">&nbsp;</div>
+        <div class="col-6">
+          <section class='quiz hidden' role="region">
+          	<form id='quiz'>
+          	  <br>
+          	  <div class="number"></div>
+          		<h2></h2>
+          		<div class="container question">
+          		  <img class="question">
+          		</div>
+          		<label for="question" class='question-text'></label>
+          		<fieldset class='answer-choices'>
+          			<input type="radio" name="answers" id="answer1" class='radio-button' value="0" />
+          			<label for="answer1" class='answer1'></label>
+          			<br />
+          			<input type="radio" name="answers" id="answer2" class='radio-button' value="1" />
+          			<label for="answer2" class='answer2'></label>
+          			<br />
+          			<input type="radio" name="answers" id="answer3" class='radio-button' value="2" />
+          			<label for="answer3" class='answer3'></label>
+          			<br />
+          			<input type="radio" name="answers" id="answer4" class='radio-button' value="3" />
+          			<label for="answer4" class='answer4'></label>
+          			<br />
+          		</fieldset>
+          		<div class="buttons-and-score">
+          			<div class="left-align-content">
+          				<p class="js-current-score current-score"></p>
+          			</div>
+          			<div class="right-align-content">
+          				<button type='submit' class='js-submit hidden submit-button'>Submit</button>
+          				<button type='button' class='js-next next-button hidden'>Next</button>
+          			</div>
+          		</div>
+          		<br>
+          		<div class="feedback js-feedback">
+          		</div>
+          		<div class="container answer">
+                  <img class="answer">
+              </div>
+              <h3 class="score-forNow"></h3>
+          	</form>
+          </section>
+          <section class= "results hidden" role="region2">
+            <p>You Scored <span class="score">0</span> out of <span class="question-total">10</span>
+          	</p>
+      		  <button>
+      		    Click Here to Try Again!
+      		  </button>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+       <script src="index.js"></script>
+  </body>
+</html>
